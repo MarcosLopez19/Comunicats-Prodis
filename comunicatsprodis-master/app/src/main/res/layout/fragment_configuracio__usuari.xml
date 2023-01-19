@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCanviarPassword"
+        style="@style/Widget.ComunicaProdis.buttonConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/configUsuari_button_marginTop"
+        android:layout_marginBottom="@dimen/configUsuari_button1_marginBottom"
+        android:minHeight="@dimen/configUsuari_button_minHeight"
+        android:text="@string/canviar_password"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnFotoPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnFotoPerfil"
+        style="@style/Widget.ComunicaProdis.buttonConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/configUsuari_button2_marginEnd"
+        android:layout_marginBottom="@dimen/configUsuari_button2_marginBottom"
+        android:minHeight="@dimen/configUsuari_button_minHeight"
+        android:text="@string/foto_de_perfil"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIdioma"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/configUsuari_textView_marginTop"
+        android:text="@string/idioma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFotoPerfil" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/configUsuari_textView2_marginTop"
+        android:layout_marginEnd="@dimen/configUsuari_textView2_marginEnd"
+        android:text="@string/usuaris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/configUsuari_radioGroup_marginEnd"
+        android:layout_marginBottom="@dimen/configUsuari_radioGroup_marginBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdioma">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/catal" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/castell" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/angles" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creacio_enquesta">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nom_creacio_enquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/enquesta_administrador_textview_marginTop"
+            android:text="@string/crear_enquesta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nomenquesta_creacio"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/creacio_enquesta_textview_marginTop"
+            android:text="@string/nomenquesta_creacio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nom_creacio_enquesta" />
+
+        <EditText
+            android:id="@+id/editTextNomEnquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/creacio_enquesta_edittext_marginTop"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomenquesta_creacio"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/destinatarienquesta_creacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/creacio_enquesta_edittext_marginTop"
+            android:text="@string/destinataris_enquesta"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomEnquesta" />
+
+        <EditText
+            android:id="@+id/editTextDestinatariEnquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/creacio_enquesta_edittext_marginTop"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/destinatarienquesta_creacio"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_enviar_enquesta"
+            style="@style/Widget.ComunicaProdis.ButtonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="128dp"
+            android:text="@string/enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_cancelar_enquesta"
+            style="@style/Widget.ComunicaProdis.ButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="128dp"
+            android:text="@string/cancelar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_enviar_enquesta"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pregunta1_creacio_enquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/creacio_enquesta_textview2_marginTop"
+            android:text="@string/pregunta1_enquesta"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDestinatariEnquesta"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="71dp" />
+
+        <CheckBox
+            android:id="@+id/opcio1_creacio_enquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_imageview_marginStart"
+            android:layout_marginTop="@dimen/enviament_enquesta_usuari_checkbox_marginTop"
+            android:text="@string/opcio1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta1_creacio_enquesta" />
+
+        <CheckBox
+            android:id="@+id/opcio2_creacio_enquesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/creacio_enquesta_checkbox_separacio_margin_start"
+            android:layout_marginTop="@dimen/creacio_enquesta_checkbox_marginTop"
+            android:text="@string/opcio2"
+            app:layout_constraintStart_toEndOf="@id/opcio1_creacio_enquesta"
+            app:layout_constraintTop_toBottomOf="@+id/pregunta1_creacio_enquesta"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/borrar_pregunta_enquesta"
+            android:layout_width="@dimen/enquesta_administrador_imageview_layout_width"
+            android:layout_height="@dimen/enquesta_administrador_imageview_layout_height"
+            android:layout_marginStart="@dimen/enquesta_administrador_imageview_marginStart"
+            app:layout_constraintStart_toEndOf="@+id/pregunta1_creacio_enquesta"
+            app:srcCompat="@drawable/paperera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="271dp" />
+
+        <ImageView
+            android:id="@+id/crearPregunta"
+            android:layout_width="@dimen/enquesta_administrador_imageview2_layout_width"
+            android:layout_height="@dimen/enquesta_administrador_imageview2_layout_height"
+            android:layout_marginStart="@dimen/creacio_enquesta_imageview2_marginStart"
+            android:layout_marginTop="@dimen/creacio_enquesta_imageview2_marginTop"
+            android:src="@drawable/crear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opcio1_creacio_enquesta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

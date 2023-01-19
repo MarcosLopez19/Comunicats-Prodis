@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/constraintlayoutTherme">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editarAutoritzacio_nomTextInputNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/crearAutoritzacio_editText_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editarAutoritzacio_nomAutoritzacio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/min_height"
+                android:text="@string/nom"
+                android:textColor="#757575"
+                tools:ignore="TextContrastCheck">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editarAutoritzacio_TextInputDescripcio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/crearAutoritzacio_editText2_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarAutoritzacio_nomTextInputNom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editarAutoritzacio_descripcio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/min_height"
+                android:text="@string/descripcio"
+                android:textColor="#757575">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/editarAutoritzacio_destinatari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/crearAutoritzacio_spinner_marginTop"
+            android:contentDescription="@string/contentDescription"
+            android:minHeight="@dimen/min_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarAutoritzacio_TextInputDescripcio" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editarAutoritzacio_TextInputtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/crearAutoritzacio_editText3_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarAutoritzacio_destinatari">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editarAutoritzacio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/min_height"
+                android:text="@string/textAutoritzacio"
+                android:textColor="#616161">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/editarAutoritzacio_Aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/crearAutoritzacio_button_marginStart"
+            android:layout_marginTop="@dimen/crearAutoritzacio_button_marginTop"
+            android:text="@string/enviar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarAutoritzacio_TextInputtext" />
+
+        <Button
+            android:id="@+id/editarAutoritzacio_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/crearAutoritzacio_button2_marginEnd"
+            android:text="@string/cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editarAutoritzacio_Aceptar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

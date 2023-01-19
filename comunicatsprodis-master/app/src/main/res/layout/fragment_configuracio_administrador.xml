@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/constraintlayoutTherme">
+
+
+        <TextView
+            android:id="@+id/configuracioAdministrador_Usuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_height"
+            android:text="@string/usuaris"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/configuracioAdministrador_AfegirUsuari"
+            style="@style/Widget.ComunicaProdis.buttonConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confAdmin_button_marginTop"
+            android:minHeight="@dimen/min_height"
+            android:text="@string/afegir_usuari"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracioAdministrador_Usuari" />
+
+        <Button
+            android:id="@+id/configuracioAdministrador_ModificarUsuari"
+            style="@style/Widget.ComunicaProdis.buttonConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confAdmin_button2_marginTop"
+            android:minHeight="@dimen/min_height"
+            android:text="@string/modificar_usuari"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="@+id/configuracioAdministrador_AfegirUsuari"
+            app:layout_constraintTop_toBottomOf="@+id/configuracioAdministrador_AfegirUsuari" />
+
+        <Button
+            android:id="@+id/configuracioAdministrador_EliminarUsuari"
+            style="@style/Widget.ComunicaProdis.buttonConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confAdmin_button3_marginTop"
+            android:minHeight="@dimen/min_height"
+            android:text="@string/eliminar_usuari"
+            android:textAlignment="viewStart"
+            app:layout_constraintStart_toStartOf="@+id/configuracioAdministrador_ModificarUsuari"
+            app:layout_constraintTop_toBottomOf="@+id/configuracioAdministrador_ModificarUsuari" />
+
+
+        <TextView
+            android:id="@+id/configuracioAdministrador_Idioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confAdmin_textView_marginTop"
+            android:text="@string/idioma"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracioAdministrador_EliminarUsuari">
+
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confAdmin_radioGroup_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracioAdministrador_Idioma">
+
+            <RadioButton
+                android:id="@+id/configuracioAdministrador_Catala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/catal" />
+
+            <RadioButton
+                android:id="@+id/configuracioAdministrador_castella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/castell" />
+
+            <RadioButton
+                android:id="@+id/configuracioAdministrador_angles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/angles" />
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

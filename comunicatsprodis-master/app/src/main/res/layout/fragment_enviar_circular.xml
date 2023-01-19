@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enviar_circular">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="409dp"
+            android:layout_height="355dp"
+            android:background="@color/primaryColor"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEnviarCircuar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enviar_circular_textInputLayout_nomCiuclar"
+            android:layout_width="@dimen/enviar_circular_textimputLayout_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/enviar_circular_textimputLayout_layout_marginTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enviar_circular_textInputEditText_nomCiuclar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/intro_nom_circular"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/enviar_ciruclar_TextView_destinaris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enviar_circular_textview_marginStart"
+            android:layout_marginTop="@dimen/enviar_circular_textview_margintop"
+            android:text="@string/enviar_circulars_TextView_destinari_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enviar_circular_textInputLayout_nomCiuclar" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/enviar_circular_spinner_margintop"
+            android:minHeight="@dimen/enviar_circular_spiner_minHeight"
+            app:layout_constraintBottom_toTopOf="@+id/TextInputtext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enviar_ciruclar_TextView_destinaris"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enviar_circular_textimputLayout_marginStart"
+            app:layout_constraintBottom_toTopOf="@+id/text"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/enviar_circular_imputEditText_marginTop"
+            android:minHeight="@dimen/enviar_circular_imputEditText_minHeight"
+            android:text="@string/textAutoritzacio"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enviar_ciruclar_TextView_destinaris">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.ComunicaProdis.ButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enviar_circular_button_marginStart"
+            android:text="@string/enviar_circular_btncancelar"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonEnviarCircuar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonEnviarCircuar"
+            app:layout_constraintTop_toTopOf="@+id/buttonEnviarCircuar" />
+
+        <Button
+            android:id="@+id/buttonEnviarCircuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enviar_circular_button2_marginStart"
+            android:layout_marginTop="@dimen/enviar_circular_button_marginTop"
+            android:text="@string/enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ComunicatsProdis" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#008570</item>
+        <item name="colorPrimaryVariant">#4cb59e</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#ffeb3b</item>
+        <item name="colorSecondaryVariant">#ffff72</item>
+        <item name="colorOnSecondary">#c8b900</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+        <!-- TEXT SIZE. -->
+        <item name="android:textViewStyle">@style/Widget.ComunicaProdis.TextViewTherme</item>
+        <!--BOTONES -->
+        <item name="materialButtonStyle">@style/Widget.ComunicaProdis.buttonTherme</item>
+        <!--EDIT TEXT-->
+        <item name="android:editTextStyle">@style/Widget.ComunicaProdis.EditTextTherme</item>
+        <!---->
+
+        <!---->
+        <!---->
+
+
+    </style>
+
+
+</resources>

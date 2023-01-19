@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enquesta_administrador">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nomenquesta_administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/enquesta_administrador_textview_marginStart"
+            android:layout_marginTop="@dimen/enquesta_administrador_textview_marginTop"
+            android:text="@string/nomEnquesta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descripcio_enquesta_administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/enquesta_administrador_textview2_marginTop"
+            android:text="@string/descripcio"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/nomenquesta_administrador"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="39dp" />
+
+        <ImageView
+            android:id="@+id/borrar_enquesta"
+            android:layout_width="@dimen/enquesta_administrador_imageview_layout_width"
+            android:layout_height="@dimen/enquesta_administrador_imageview_layout_height"
+            android:layout_marginStart="@dimen/enquesta_administrador_imageview_marginStart"
+            app:layout_constraintStart_toEndOf="@+id/descripcio_enquesta_administrador"
+            app:srcCompat="@drawable/paperera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <ImageView
+            android:id="@+id/crearPregunta"
+            android:layout_width="@dimen/enquesta_administrador_imageview2_layout_width"
+            android:layout_height="@dimen/enquesta_administrador_imageview2_layout_height"
+            android:layout_marginEnd="@dimen/enquesta_administrador_imageview2_marginEnd"
+            android:layout_marginBottom="@dimen/enquesta_administrador_imageview2_marginBotton"
+            android:src="@drawable/crear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
